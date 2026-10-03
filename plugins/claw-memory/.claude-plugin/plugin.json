@@ -1,0 +1,32 @@
+{
+  "name": "claw-memory",
+  "displayName": "Claw Memory",
+  "version": "1.0.0",
+  "description": "Claw mod: injects your SOUL.md, MEMORY.md and open tasks into every session automatically, gives Claude remember/recall/forget tools that write memory deterministically (and refuse secrets), and keeps a daily journal.",
+  "author": { "name": "threesil" },
+  "repository": "https://github.com/threesil/claude-mods",
+  "license": "MIT",
+  "keywords": ["claw", "memory", "journal", "mod"],
+  "dependencies": ["claw"],
+  "userConfig": {
+    "claw_dir": {
+      "type": "string",
+      "title": "Claw folder",
+      "description": "Folder with SOUL.md, MEMORY.md and TASKS.md. Use the same folder for every Claw mod.",
+      "default": "~/Claw"
+    },
+    "inject": {
+      "type": "string",
+      "title": "Memory injection",
+      "description": "always: full memory on the first prompt, matching lines after that. first-prompt: only the first prompt. off: never.",
+      "options": ["always", "first-prompt", "off"],
+      "default": "always"
+    },
+    "auto_journal": {
+      "type": "boolean",
+      "title": "Auto journal",
+      "description": "Append a one-line entry to journal/YYYY-MM-DD.md after each turn.",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "claw-telegram",
+  "displayName": "Claw Telegram",
+  "version": "1.0.0",
+  "description": "Claw mod: talk to Claw from your phone. Messages from your own Telegram chat start a turn, the answer is sent back, briefings and check-ins are pushed to you, and /approve on your phone unlocks one action that Claw Guard is holding.",
+  "author": { "name": "threesil" },
+  "repository": "https://github.com/threesil/claude-mods",
+  "license": "MIT",
+  "keywords": ["claw", "telegram", "remote", "chat", "mod"],
+  "dependencies": ["claw"],
+  "userConfig": {
+    "bot_token": {
+      "type": "string",
+      "title": "Telegram bot token",
+      "description": "From @BotFather. Stored in secure storage, never in settings.json.",
+      "sensitive": true
+    },
+    "chat_id": {
+      "type": "string",
+      "title": "Your chat id",
+      "description": "Only messages from this chat are accepted. Leave empty, message your bot, and Claw tells you the id.",
+      "default": ""
+    },
+    "claw_dir": {
+      "type": "string",
+      "title": "Claw folder",
+      "description": "Folder with your Claw files. Must match the other Claw mods.",
+      "default": "~/Claw"
+    },
+    "poll_seconds": {
+      "type": "number",
+      "title": "Poll interval (seconds)",
+      "description": "How often to check Telegram for new messages.",
+      "default": 4,
+      "min": 2,
+      "max": 60
+    },
+    "forward_checkins": {
+      "type": "boolean",
+      "title": "Push briefings and check-ins",
+      "description": "Send Claw Heartbeat briefings and check-ins to Telegram (skips 'nothing urgent').",
+      "default": true
+    }
+  }
+}

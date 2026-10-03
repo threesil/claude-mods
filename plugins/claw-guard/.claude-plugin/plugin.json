@@ -1,0 +1,24 @@
+{
+  "name": "claw-guard",
+  "displayName": "Claw Guard",
+  "version": "1.0.0",
+  "description": "Claw mod: asks for your OK before any connector action that sends, deletes, pays, publishes or shares (fails closed, also when nobody is there to answer), and flags prompt-injection text inside emails, pages and files.",
+  "author": { "name": "threesil" },
+  "repository": "https://github.com/threesil/claude-mods",
+  "license": "MIT",
+  "keywords": ["claw", "security", "guard", "prompt-injection", "mod"],
+  "userConfig": {
+    "claw_dir": {
+      "type": "string",
+      "title": "Claw folder",
+      "description": "Folder with your Claw files. Used to share remote-approval state with claw-telegram.",
+      "default": "~/Claw"
+    },
+    "extra_words": {
+      "type": "string",
+      "title": "Extra risky words",
+      "description": "Comma-separated words that also need approval when they appear in a connector tool's name, e.g. booking,cancel,schedule.",
+      "default": ""
+    }
+  }
+}

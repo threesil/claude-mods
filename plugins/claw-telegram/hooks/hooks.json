@@ -1,0 +1,4 @@
+{
+  "description": "Claw Telegram hooks module",
+  "modules": ["./register.js"]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "claude-mods",
+  "owner": {
+    "name": "threesil"
+  },
+  "metadata": {
+    "description": "Claude mods by threesil: Claw, an OpenClaw-style personal agent, plus Claude Code mods that extend it.",
+    "version": "2.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claw",
+      "source": "./plugins/claw",
+      "description": "OpenClaw-style personal agent: memory, tasks, inbox triage, daily briefing, heartbeat. Works in the Claude app, Cowork and Claude Code.",
+      "version": "1.1.0",
+      "category": "productivity"
+    },
+    {
+      "name": "claw-memory",
+      "source": "./plugins/claw-memory",
+      "description": "Mod: memory injected automatically, remember/recall/forget tools that refuse secrets, daily journal.",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "claw-hud",
+      "source": "./plugins/claw-hud",
+      "description": "Mod: task band above the prompt and a /hud pane to add and tick off tasks.",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "claw-guard",
+      "source": "./plugins/claw-guard",
+      "description": "Mod: asks before any connector action that sends, deletes, pays or shares; flags prompt injection.",
+      "version": "1.0.0",
+      "category": "security"
+    },
+    {
+      "name": "claw-heartbeat",
+      "source": "./plugins/claw-heartbeat",
+      "description": "Mod: daily briefing and scheduled check-ins inside a running session, with quiet hours.",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "claw-telegram",
+      "source": "./plugins/claw-telegram",
+      "description": "Mod: chat with Claw from Telegram, get briefings pushed, approve guarded actions with /approve.",
+      "version": "1.0.0",
+      "category": "productivity"
+    },
+    {
+      "name": "claw-suite",
+      "source": "./plugins/claw-suite",
+      "description": "Installs Claw and all Claw mods at once.",
+      "version": "1.0.0",
+      "category": "productivity"
+    }
+  ]
+}

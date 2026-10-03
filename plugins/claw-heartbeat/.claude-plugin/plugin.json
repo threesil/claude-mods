@@ -1,0 +1,46 @@
+{
+  "name": "claw-heartbeat",
+  "displayName": "Claw Heartbeat",
+  "version": "1.0.0",
+  "description": "Claw mod: wakes Claw up on a schedule inside a running Claude Code session. Daily briefing at a set time, periodic checks for overdue tasks, quiet hours, and an optional auto-run mode that makes Claude do the heartbeat by itself.",
+  "author": { "name": "threesil" },
+  "repository": "https://github.com/threesil/claude-mods",
+  "license": "MIT",
+  "keywords": ["claw", "heartbeat", "briefing", "schedule", "mod"],
+  "dependencies": ["claw"],
+  "userConfig": {
+    "claw_dir": {
+      "type": "string",
+      "title": "Claw folder",
+      "description": "Folder with SOUL.md, MEMORY.md and TASKS.md. Use the same folder for every Claw mod.",
+      "default": "~/Claw"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode",
+      "description": "notify: show a reminder only. auto-run: let Claude run the briefing and heartbeat by itself when the session is idle.",
+      "options": ["notify", "auto-run"],
+      "default": "notify"
+    },
+    "interval_minutes": {
+      "type": "number",
+      "title": "Heartbeat interval (minutes)",
+      "description": "How often Claw checks in.",
+      "default": 60,
+      "min": 10,
+      "max": 720
+    },
+    "briefing_time": {
+      "type": "string",
+      "title": "Daily briefing time",
+      "description": "HH:MM, local time. Leave empty to turn the daily briefing off.",
+      "default": "08:00"
+    },
+    "quiet_hours": {
+      "type": "string",
+      "title": "Quiet hours",
+      "description": "HH:MM-HH:MM during which Claw stays silent. Leave empty for none.",
+      "default": "22:00-07:00"
+    }
+  }
+}

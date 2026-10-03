@@ -1,0 +1,11 @@
+{
+  "name": "claw-suite",
+  "displayName": "Claw Suite",
+  "version": "1.0.0",
+  "description": "Installs Claw and every Claw mod in one go: claw, claw-memory, claw-hud, claw-guard, claw-heartbeat and claw-telegram.",
+  "author": { "name": "threesil" },
+  "repository": "https://github.com/threesil/claude-mods",
+  "license": "MIT",
+  "keywords": ["claw", "suite"],
+  "dependencies": ["claw", "claw-memory", "claw-hud", "claw-guard", "claw-heartbeat", "claw-telegram"]
+}

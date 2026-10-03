@@ -1,0 +1,4 @@
+{
+  "description": "Claw Guard hooks module",
+  "modules": ["./register.js"]
+}

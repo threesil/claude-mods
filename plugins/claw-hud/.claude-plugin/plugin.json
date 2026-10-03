@@ -1,0 +1,25 @@
+{
+  "name": "claw-hud",
+  "displayName": "Claw HUD",
+  "version": "1.0.0",
+  "description": "Claw mod: a task band above the prompt and a /hud pane to add and tick off tasks, reading the same TASKS.md as the Claw skill.",
+  "author": { "name": "threesil" },
+  "repository": "https://github.com/threesil/claude-mods",
+  "license": "MIT",
+  "keywords": ["claw", "tasks", "hud", "mod"],
+  "dependencies": ["claw"],
+  "userConfig": {
+    "claw_dir": {
+      "type": "string",
+      "title": "Claw folder",
+      "description": "Folder with SOUL.md, MEMORY.md and TASKS.md. Use the same folder for every Claw mod.",
+      "default": "~/Claw"
+    },
+    "show_band": {
+      "type": "boolean",
+      "title": "Show task band",
+      "description": "Show a one-line task summary above the prompt.",
+      "default": true
+    }
+  }
+}

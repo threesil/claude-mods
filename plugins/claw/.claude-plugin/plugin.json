@@ -1,0 +1,18 @@
+{
+  "name": "claw",
+  "version": "1.1.0",
+  "description": "OpenClaw-style personal agent for Claude: long-term memory, tasks & reminders, inbox triage, daily briefing and a proactive heartbeat. Works in the Claude app, Cowork and Claude Code; add the claw-* mods in Claude Code for more.",
+  "author": {
+    "name": "threesil"
+  },
+  "license": "MIT",
+  "keywords": [
+    "personal-assistant",
+    "memory",
+    "inbox",
+    "briefing",
+    "openclaw"
+  ],
+  "repository": "https://github.com/threesil/claude-mods",
+  "displayName": "Claw"
+}
